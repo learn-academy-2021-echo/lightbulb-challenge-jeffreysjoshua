@@ -15,7 +15,7 @@ class Button extends Component{
   // set button to off, if it is on, and change color
     if (this.state.onOrOff === "on"){
       this.setState({onOrOff: "off", color: "white"})
-  // set button to on, if it is off, and change color
+  // set button to on if it is off and change color
     } else {
       this.setState({onOrOff: "on", color: "yellow"})
     }
