@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // create objects with pictures stored as the values for the keys
 const pictures = {
   lightOn: "https://cdn.pixabay.com/photo/2013/07/12/14/34/light-148483_1280.png",
-  lightOff:"https://www.clipartmax.com/png/middle/34-340495_light-bulb-off-clipart.png"
+  lightOff: "https://www.freeiconspng.com/uploads/bulb-off-icon-25.png"
 }
 
 const switches = {
@@ -16,7 +16,7 @@ class Bulb extends Component{
     constructor(props) {
     super(props);
     this.state = {
-    open: true
+    open: false
     }
   }
 
@@ -25,18 +25,18 @@ class Bulb extends Component{
    this.setState(value => ({open: !value.open}))
   }
 
-// create two functions to have images of switch and bulb toggle
+// create two ternary functions to have images of switch and bulb toggle
   getImage = () => this.state.open ? 'lightOn' : 'lightOff'
-  getSwitch = () => this.state.open? 'switchOn' : 'switchOff'
+  getSwitch = () => this.state.open ? 'switchOn' : 'switchOff'
 
   render(){
     const exactImage = this.getImage();
     const exactSwitch = this.getSwitch();
-// return the images and create id tag for sizing in css
+// return the images and create id tag for styling in css
     return(
       <>
-        <img id= "Bulb" style={{width: '250px'}} src={pictures[exactImage]} />
-        <img id= "Switch" style={{width: '150px'}} src={switches[exactSwitch]} onClick={this.changeImage} />
+        <img id= "Bulb" src={pictures[exactImage]} />
+        <img id= "Switch" src={switches[exactSwitch]} onClick={this.changeImage} />
       </>
     )
   }
