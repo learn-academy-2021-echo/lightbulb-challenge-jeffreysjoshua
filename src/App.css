@@ -26,26 +26,56 @@
 }
 body{
   text-align: center;
-  padding: 50px
+  padding: 20px;
+  color: black;
+  opacity: 600%;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: fantasy;
+  background-image: url('https://media.istockphoto.com/vectors/cartoon-storm-cloud-vector-id615895982?k=20&m=615895982&s=170667a&w=0&h=G8OzlUid2JHUr-opTSGwjPXjO8-Z9zREuQoGI68GesM=');
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
 }
- #Button {
-   margin: 10px;
-   width: 120px;
-   height: 120px;
-   font-size: 40px;
- }
+
+#NewBulb{
+  font-family: fantasy;
+  padding: 3px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+  font-size: medium;
+
+}
+
+#LessBulb{
+  font-family: fantasy;
+  padding: 3px;
+  margin: auto;
+  display: flex;
+  background-color: black;
+  color: yellow;
+  font-weight: bolder;
+  font-size: medium;
+
+}
 
  #Bulb {
-   margin: 10px;
-   width: 250px;
-   height: 350px;
+   margin: 1px;
+   width: 230px;
+   height: 275px;
  }
 
  #Switch{
-   margin: 10px;
-   width: 120px;
-   height: 120px;
+   margin: 1px;
+   width: 85px;
+   height: 95px;
  }
+
 
 
 
